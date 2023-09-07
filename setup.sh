@@ -70,6 +70,7 @@ github.com/tomnomnom/httprobe@latest
 github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 github.com/tomnomnom/waybackurls@latest
 github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+github.com/projectdiscovery/httpx/cmd/httpx@latest
 )
 
 # install go programs
@@ -92,6 +93,7 @@ ln -s /root/go/bin/httprobe /usr/local/bin/httprobe
 ln -s /root/go/bin/subfinder /usr/local/bin/subfinder
 ln -s /root/go/bin/waybackurls /usr/local/bin/waybackurls
 ln -s /root/go/bin/nuclei /usr/local/bin/nuclei
+ln -s /root/go/bin/httpx /usr/local/bin/httpx
 ln -s /root/usr/bin/python3 /usr/bin/python
 echo "[+] Done"
 
