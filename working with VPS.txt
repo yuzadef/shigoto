@@ -1,0 +1,17 @@
+# connect via ssh
+- root@ip_address
+
+# install all tools
+- git clone https://github.com/yuzadef/allinone.git
+- cd allinone
+- chmod +x install.sh
+- ./install.sh
+
+# upload file to vps
+- scp /path/to/local-file root@ip_address:/remote/path/to/upload/to
+
+# download file from vps
+- scp root@ip_address:/path/to/remote/file /local/path/to/download/to
+
+# setup notification
+- https://anubhav-singh.medium.com/notification-system-for-your-bug-bounty-automation-7b13af1b7372
