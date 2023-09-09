@@ -42,6 +42,7 @@ masscan
 hydra
 cewl
 whois
+sqlmap
 )
 
 # install each tools using APT
