@@ -42,7 +42,6 @@ masscan
 hydra
 cewl
 whois
-sqlmap
 )
 
 # install each tools using APT
@@ -96,6 +95,19 @@ ln -s /root/go/bin/waybackurls /usr/local/bin/waybackurls
 ln -s /root/go/bin/nuclei /usr/local/bin/nuclei
 ln -s /root/go/bin/httpx /usr/local/bin/httpx
 ln -s /root/usr/bin/python3 /usr/bin/python
+echo "[+] Done"
+
+# installing Sqlmap
+echo "[+] Installing Sqlmap"
+git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git /opt/sqlmap-dev
+echo 'alias sqlmap="python3 /opt/sqlmap-dev/sqlmap.py"' >> ~/.bashrc
+source ~/.bashrc
+echo "[+] Done"
+
+# installing Ghauri
+echo "[+] Installing Ghauri"
+git clone https://github.com/r0oth3x49/ghauri.git /opt/ghauri
+python3 /opt/ghauri/setup.py install
 echo "[+] Done"
 
 # post installing GF
