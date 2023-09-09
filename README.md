@@ -27,11 +27,3 @@ https://anubhav-singh.medium.com/notification-system-for-your-bug-bounty-automat
 ## Setup Tmux configuration file
 - download the .tmux.conf and place it in ~/ directory
 - tmux source-file ~/.tmux.conf
-
-## Update .bashrc for colored terminal
-### Set a fancy prompt (non-color, unless we know we "want" color)
-```
-case "$TERM" in
-    xterm-color|xterm-256color) color_prompt=yes;;
-esac
-```
