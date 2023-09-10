@@ -123,3 +123,29 @@ echo "[+] Post install python3-impacket"
 cp /usr/share/doc/python3-impacket/examples/* /usr/bin/
 echo "[+] Done"
 
+# setup tmux configuration file
+echo "[+] Setting up Tmux configuration"
+wget https://github.com/yuzadef/allinone/raw/main/.tmux.conf -o ~/.tmux.conf
+echo "[+] Done"
+
+# setup colored prompt
+echo "[+] Setting up fancy prompt"
+echo """
+case "$TERM" in
+    xterm-color|xterm-256color) color_prompt=yes;;
+esac
+""" >> ~/.bashrc
+echo "[+] Done"
+
+# update ~/.bash_profile
+echo "[+] Updating bash_profile"
+echo """
+if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+fi
+
+if [ -f ~/.tmux.conf ]; then
+    tmux source-file ~/.tmux.conf
+fi
+""" >> ~/.bash_profile
+echo "[+] Done"
