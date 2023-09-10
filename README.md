@@ -1,4 +1,3 @@
-# allinone
 ## Working with VPS
 ### connect via ssh
 ```
