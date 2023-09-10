@@ -125,7 +125,7 @@ echo "[+] Done"
 
 # setup tmux configuration file
 echo "[+] Setting up Tmux configuration"
-echo "
+echo "https://github.com/yuzadef/shigoto/blob/main/VPS/.tmux.conf"
 echo "[+] Done"
 
 # setup colored prompt
