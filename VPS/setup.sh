@@ -125,7 +125,7 @@ echo "[+] Done"
 
 # setup tmux configuration file
 echo "[+] Setting up Tmux configuration"
-wget https://github.com/yuzadef/allinone/raw/main/.tmux.conf -o ~/.tmux.conf
+echo "
 echo "[+] Done"
 
 # setup colored prompt
