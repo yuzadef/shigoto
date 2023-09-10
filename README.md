@@ -23,16 +23,3 @@ https://anubhav-singh.medium.com/notification-system-for-your-bug-bounty-automat
 ## Bash script to automatically install testing tools.
 - download the setup.sh and change file mode
 - execute script
-
-## Setup Tmux configuration file
-- download the .tmux.conf and place it in ~/ directory
-- tmux source-file ~/.tmux.conf
-
-## set a fancy prompt in .bashrc
-```
-case "$TERM" in
-    xterm-color|xterm-256color) color_prompt=yes;;
-esac
-
-force_color_prompt=yes
-```
