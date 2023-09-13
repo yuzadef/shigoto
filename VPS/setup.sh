@@ -116,6 +116,11 @@ git clone https://github.com/devanshbatham/ParamSpider.git /opt/Paramspider
 python3 /opt/Paramspider/setup.py install
 echo "[+] Done"
 
+# installing seclists
+echo "[+] Installing SecLists"
+git clone https://github.com/danielmiessler/SecLists.git /opt/seclists
+echo "[+] Done"
+
 # post installing GF
 echo "[+] Post install GF"
 git clone https://github.com/tomnomnom/gf.git /usr/local/go/src/
