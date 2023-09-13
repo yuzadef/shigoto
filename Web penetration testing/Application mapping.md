@@ -1,4 +1,9 @@
 # Enumerate content & functionality
+- [Web spidering](#web-spidering-user-directed-spidering)
+- [Discovering hidden content](#discovering-hidden-content)
+- [Inference from published content](#inference-from-published-content)
+- [Use of public informations](#use-of-public-informations)
+
 ## Web spidering (User-directed spidering)
 ```
 1. Configure your browser to use either Burp or WebScarab as a local proxy
@@ -28,7 +33,7 @@ mation about the target application, which will be useful later in identifying
 the various attack surfaces exposed by the application
 ```
 
-## Discoverying hidden content
+## Discovering hidden content
 ```
 1. Make some manual requests for known valid and invalid resources, and
 identify how the server handles the latter.
