@@ -99,15 +99,21 @@ echo "[+] Done"
 
 # installing Sqlmap
 echo "[+] Installing Sqlmap"
-git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git /opt/sqlmap-dev
+git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git /opt/Sqlmap
 echo 'alias sqlmap="python3 /opt/sqlmap-dev/sqlmap.py"' >> ~/.bashrc
 source ~/.bashrc
 echo "[+] Done"
 
 # installing Ghauri
 echo "[+] Installing Ghauri"
-git clone https://github.com/r0oth3x49/ghauri.git /opt/ghauri
+git clone https://github.com/r0oth3x49/ghauri.git /opt/Ghauri
 python3 /opt/ghauri/setup.py install
+echo "[+] Done"
+
+# installing Paramspider
+echo "[+] Installing Paramspider"
+git clone https://github.com/devanshbatham/ParamSpider.git /opt/Paramspider
+python3 /opt/Paramspider/setup.py install
 echo "[+] Done"
 
 # post installing GF
