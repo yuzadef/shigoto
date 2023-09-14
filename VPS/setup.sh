@@ -121,6 +121,14 @@ echo "[+] Installing SecLists"
 git clone https://github.com/danielmiessler/SecLists.git /opt/seclists
 echo "[+] Done"
 
+# installing metasploit-framework
+echo "[+] Installing metasploit"
+mkdir /opt/metasploit-framework
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > /opt/metasploit-framework/msfinstall
+chmod 755 /opt/msfinstall
+/opt/msfinstall
+echo "[+] Done"
+
 # post installing GF
 echo "[+] Post install GF"
 git clone https://github.com/tomnomnom/gf.git /usr/local/go/src/
