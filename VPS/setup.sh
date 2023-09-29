@@ -129,6 +129,11 @@ chmod 755 /opt/msfinstall
 /opt/msfinstall
 echo "[+] Done"
 
+# installing Arjun
+echo "[+] Installing Arjun"
+pip3 install arjun
+echo "[+] Done"
+
 # post installing GF
 echo "[+] Post install GF"
 git clone https://github.com/tomnomnom/gf.git /usr/local/go/src/
