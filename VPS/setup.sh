@@ -116,6 +116,12 @@ git clone https://github.com/devanshbatham/ParamSpider.git /opt/Paramspider
 python3 /opt/Paramspider/setup.py install
 echo "[+] Done"
 
+# installing dirsearch
+echo "[+] Installing dirsearch"
+git clone https://github.com/maurosoria/dirsearch.git /opt/dirsearch
+python3 /opt/dirsearch/setup.py install
+echo "[+] Done"
+
 # installing seclists
 echo "[+] Installing SecLists"
 git clone https://github.com/danielmiessler/SecLists.git /opt/seclists
