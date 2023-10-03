@@ -140,6 +140,11 @@ echo "[+] Installing Arjun"
 pip3 install arjun
 echo "[+] Done"
 
+# install WpScan
+echo "[+] Installing WpScan"
+gem install wpscan
+echo "[+] Done"
+
 # post installing GF
 echo "[+] Post install GF"
 git clone https://github.com/tomnomnom/gf.git /usr/local/go/src/
