@@ -160,7 +160,24 @@ echo "[+] Done"
 
 # setup tmux configuration file
 echo "[+] Setting up Tmux configuration"
-echo "https://github.com/yuzadef/shigoto/raw/main/VPS/.tmux.conf" -o ~/.tmux.conf
+echo """
+set -g mouse on
+set-option -g prefix C-a
+
+# use xclip to copy and paste with the system clipboard
+bind C-c run "tmux save-buffer - | xclip -i -sel clip"
+bind C-v run "tmux set-buffer $(xclip -o -sel clip); tmux paste-buffer"
+
+# split panes
+bind-key Down split-window -v
+bind-key Right split-window -h
+
+# navigating panes
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+""" > ~/.tmux.conf
 echo "[+] Done"
 
 # setup colored prompt
