@@ -83,37 +83,38 @@ echo "[+] Done"
 
 # symlink go programs
 echo "[+] Symlinking GO programs"
-ln -s /root/go/bin/amass /usr/local/bin/amass
-ln -s /root/go/bin/ffuf /usr/local/bin/ffuf
-ln -s /root/go/bin/assetfinder /usr/local/bin/assetfinder
-ln -s /root/go/bin/gau /usr/local/bin/gau
-ln -s /root/go/bin/gf /usr/local/bin/gf
-ln -s /root/go/bin/gobuster /usr/local/bin/gobuster
-ln -s /root/go/bin/hakrawler /usr/local/bin/hakrawler
-ln -s /root/go/bin/httprobe /usr/local/bin/httprobe
-ln -s /root/go/bin/subfinder /usr/local/bin/subfinder
-ln -s /root/go/bin/waybackurls /usr/local/bin/waybackurls
-ln -s /root/go/bin/nuclei /usr/local/bin/nuclei
-ln -s /root/go/bin/httpx /usr/local/bin/httpx
-ln -s /root/usr/bin/python3 /usr/bin/python
+ln -s ~/go/bin/jsluice /usr/local/bin/jsluice
+ln -s ~/go/bin/amass /usr/local/bin/amass
+ln -s ~/go/bin/ffuf /usr/local/bin/ffuf
+ln -s ~/go/bin/assetfinder /usr/local/bin/assetfinder
+ln -s ~/go/bin/gau /usr/local/bin/gau
+ln -s ~/go/bin/gf /usr/local/bin/gf
+ln -s ~/go/bin/gobuster /usr/local/bin/gobuster
+ln -s ~/go/bin/hakrawler /usr/local/bin/hakrawler
+ln -s ~/go/bin/httprobe /usr/local/bin/httprobe
+ln -s ~/go/bin/subfinder /usr/local/bin/subfinder
+ln -s ~/go/bin/waybackurls /usr/local/bin/waybackurls
+ln -s ~/go/bin/nuclei /usr/local/bin/nuclei
+ln -s ~/go/bin/httpx /usr/local/bin/httpx
+ln -s ~/usr/bin/python3 /usr/bin/python
 echo "[+] Done"
 
 # installing Sqlmap
 echo "[+] Installing Sqlmap"
-git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git /opt/Sqlmap
+git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git /opt/sqlmap
 echo 'alias sqlmap="python3 /opt/sqlmap-dev/sqlmap.py"' >> ~/.bashrc
 source ~/.bashrc
 echo "[+] Done"
 
 # installing Ghauri
 echo "[+] Installing Ghauri"
-git clone https://github.com/r0oth3x49/ghauri.git /opt/Ghauri
+git clone https://github.com/r0oth3x49/ghauri.git /opt/ghauri
 python3 /opt/ghauri/setup.py install
 echo "[+] Done"
 
 # installing Paramspider
 echo "[+] Installing Paramspider"
-git clone https://github.com/devanshbatham/ParamSpider.git /opt/Paramspider
+git clone https://github.com/devanshbatham/ParamSpider.git /opt/paramspider
 python3 /opt/Paramspider/setup.py install
 echo "[+] Done"
 
@@ -150,8 +151,8 @@ echo "[+] Done"
 echo "[+] Post install GF"
 git clone https://github.com/tomnomnom/gf.git /usr/local/go/src/
 echo 'source /usr/local/go/src/gf/gf-completion.bash' >> ~/.bashrc
-git clone https://github.com/emadshanab/Gf-Patterns-Collection.git
-cd Gf-Patterns-Collection && chmod +x set-all.sh && ./set-all.sh
+git clone https://github.com/emadshanab/Gf-Patterns-Collection.git /usr/local/go/src/gf/
+chmod +x /usr/local/go/src/gf/Gf-Patterns-Collection/set-all.sh && /usr/local/go/src/gf/Gf-Patterns-Collection/set-all.sh
 echo "[+] Done"
 
 # post installing python3-impacket
@@ -179,15 +180,6 @@ bind -n M-Down select-pane -D
 bind -n M-Left select-pane -L
 bind -n M-Right select-pane -R
 """ > ~/.tmux.conf
-echo "[+] Done"
-
-# setup colored prompt
-echo "[+] Setting up fancy prompt"
-echo """
-case "$TERM" in
-    xterm-color|xterm-256color) color_prompt=yes;;
-esac
-""" >> ~/.bashrc
 echo "[+] Done"
 
 # update ~/.bash_profile
