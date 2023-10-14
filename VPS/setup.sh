@@ -71,6 +71,7 @@ github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 github.com/tomnomnom/waybackurls@latest
 github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 github.com/projectdiscovery/httpx/cmd/httpx@latest
+github.com/BishopFox/jsluice/cmd/jsluice@latest
 )
 
 # install go programs
