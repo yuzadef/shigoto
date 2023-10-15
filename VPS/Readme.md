@@ -22,3 +22,6 @@ https://anubhav-singh.medium.com/notification-system-for-your-bug-bounty-automat
 ## Bash script to automatically install testing tools.
 - download the setup.sh and change file mode
 - execute script
+
+## Burp Suite Pro
+- https://sites.google.com/view/pentesting-club/home
