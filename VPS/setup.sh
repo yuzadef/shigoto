@@ -96,7 +96,7 @@ ln -s ~/go/bin/subfinder /usr/local/bin/subfinder
 ln -s ~/go/bin/waybackurls /usr/local/bin/waybackurls
 ln -s ~/go/bin/nuclei /usr/local/bin/nuclei
 ln -s ~/go/bin/httpx /usr/local/bin/httpx
-ln -s ~/usr/bin/python3 /usr/bin/python
+ln -s /usr/bin/python3 /usr/bin/python
 echo "[+] Done"
 
 # installing Sqlmap
