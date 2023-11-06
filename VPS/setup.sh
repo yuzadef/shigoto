@@ -91,11 +91,10 @@ pip3 install sqlmap
 sudo ln -s ~/.local/bin/sqlmap /usr/local/bin/sqlmap
 
 # installing seclists
-sudo git clone https://github.com/danielmiessler/SecLists.git /opt/seclists
+sudo git clone https://github.com/danielmiessler/SecLists.git /usr/share/seclists
 
 # install arjun
 pip3 install arjun
-sudo ln -s ~/.local/bin/sqlmap /usr/local/bin/sqlmap
 
 # install wpscan
 sudo gem install wpscan
