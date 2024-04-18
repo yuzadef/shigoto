@@ -114,7 +114,5 @@ echo "[+] DONE"
 echo "[+] INSTALL GF TEMPLATES"
 sudo git clone https://github.com/tomnomnom/gf.git /opt/gf
 echo 'source /opt/gf/gf-completion.bash' >> ~/.bashrc
-sudo echo 'source /opt/gf/gf-completion.bash' >> /root/.bashrc
 mkdir ~/.gf && sudo cp /opt/gf/examples/* ~/.gf
-sudo mkdir /root/.gf && sudo cp /opt/gf/examples/* /root/.gf
 echo "[+] DONE"
