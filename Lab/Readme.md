@@ -6,7 +6,7 @@
 4. On the machine, open browser and navigate to https://github.com/yuzadef/shigoto/tree/main/Lab
 5. Download the setup.sh file, change the file permission (chmod +x setup.sh)
 6. Execute the script
-7. Navigate to https://sites.google.com/view/pentesting-club/home
+7. Navigate to https://sites.google.com/view/pentesting-club/home or https://github.com/cyb3rzest/Burp-Suite-Pro
 8. Expand "Steps to Activate in Kali Linux" and download the zip file
 9. Follow the steps specified in the article
 
